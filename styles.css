@@ -15,7 +15,7 @@ html {
 
 a {
     color: #05B9EC;
-    text-shadow: 0px 0px 3px #6800E7;
+    /*text-shadow: 0px 0px 3px #6800E7; */
     /*text-decoration: none; */
     transition: text-shadow 1s;
 }
@@ -90,12 +90,12 @@ h2,h3 {
 
 @keyframes disco {
     0% {
-        text-shadow: 0px 0px 160px #B239FF;
+        text-shadow: 0px 0px 110px #B239FF;
     }
     50% {
-        text-shadow: 0px 0px 130x #6800E7;
+        text-shadow: 0px 0px 110x #6800E7;
     }
     100% {
-        text-shadow: 0px 0px 140px #05B9EC;
+        text-shadow: 0px 0px 110px #05B9EC;
     }
 }
