@@ -6,43 +6,96 @@ html {
     background-color: #212a2e;
     color: #F7F8F8;
 }
-body {
+
+.content {
     margin:auto;
     max-width:780px;
     padding:3em;
 }
+
 a {
     color: #05B9EC;
     text-shadow: 0px 0px 3px #6800E7;
-    text-decoration: none;
+    /*text-decoration: none; */
     transition: text-shadow 1s;
 }
 a:hover {
-    text-shadow: 0px 0px 10px #B239FF;
+    text-shadow: 0px 0px 30px #B239FF;
+    /*text-shadow: 0px 0px 10px #B239FF;*/
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: #6800E7;
+
+}
+
+h1 {
+    margin-top:0;
 }
 
 h1,h2,h3 {
     font-family: 'Orbitron', sans-serif;
-
+    transition: text-shadow 1s;
 }
+
+
 h1 {
     text-align: center;
     background-image: linear-gradient(to left, #B239FF, #6800E7, #05B9EC, #B239FF, #6800E7, #05B9EC);
     -webkit-background-clip: text;
-    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #555;
     color: transparent;
     font-size: 4em;
     margin-bottom:0;
+    animation: disco 15s linear infinite alternate;
     /*font-family: 'Press Start 2P';*/
 }
 h2,h3 {
     color: #05B9EC;
-    text-shadow: 1px 1px 10px #6800E7;
-
+    text-shadow: 0px 0px 20px #B239FF;
 }
 
 .alert {
     border: 3px dashed red;
     padding:1em;
+}
+
+.cyber-wrap {
+    postion:relative;
+}
+
+.cyber {
+    background-image: url("cyber_plain.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    height: 50px;
+    animation: backgroundScroll 10s linear infinite;
+    transform: rotate(2deg);
+/*    position: fixed;*/
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+
+@keyframes backgroundScroll {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -277px 0;
+    }
+}
+
+
+
+@keyframes disco {
+    0% {
+        text-shadow: 0px 0px 30px #B239FF;
+    }
+    50% {
+        text-shadow: 0px 0px 30x #6800E7;
+    }
+    100% {
+        text-shadow: 0px 0px 30px #05B9EC;
+    }
 }
