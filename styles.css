@@ -27,6 +27,7 @@ a:hover {
 
 }
 
+
 h1 {
     margin-top:0;
 }
@@ -46,7 +47,8 @@ h1 {
     color: transparent;
     font-size: 4em;
     margin-bottom:0;
-    animation: disco 15s linear infinite alternate;
+    /*animation: disco 15s linear infinite alternate;*/
+    text-shadow: 0px 0px 110px #B239FF;
     /*font-family: 'Press Start 2P';*/
 }
 h2,h3 {
@@ -68,14 +70,16 @@ h2,h3 {
     background-repeat: repeat-x;
     background-size: contain;
     height: 50px;
-    animation: backgroundScroll 10s linear infinite;
+    animation: backgroundScroll 20s linear infinite;
     transform: rotate(2deg);
-/*    position: fixed;*/
     width: 100%;
     margin-top: 10px;
 }
 
 
+small, small a {
+    color: #999;
+}
 
 @keyframes backgroundScroll {
     from {
